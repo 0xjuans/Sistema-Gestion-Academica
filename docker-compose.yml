@@ -1,0 +1,39 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: academic-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: academic_db
+      MYSQL_USER: academic_user
+      MYSQL_PASSWORD: academic_pass
+      MYSQL_ROOT_PASSWORD: root_pass_123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot_pass_123"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: academic-backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_URI: jdbc:mysql://mysql:3306/academic_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      DB_USER: academic_user
+      DB_PASSWORD: academic_pass
+      DB_DRIVER: com.mysql.cj.jdbc.Driver
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:
