@@ -18,7 +18,7 @@ API REST para gestionar alumnos, materias y notas usando Java 17, Spring Boot 3.
 
 En Docker Compose ya estan definidas para el servicio `backend`.
 
-## Ejecucion (maximo 10 comandos)
+## Ejecucion
 Ejecutar desde la raiz del proyecto:
 
 1. `docker compose up -d --build`
@@ -52,8 +52,9 @@ Con contenedor MySQL levantado (`academic-mysql`):
 
 ### Landing
 ![Landing principal](frontend/src/assets/img/landing-1.png)
-![Landing modulos](frontend/src/assets/img/landing-2.png)
+
 
 ### Modulo academico
+![Landing modulos](frontend/src/assets/img/landing-2.png)
 ![Modulo academico - vista 1](frontend/src/assets/img/landing-3.png)
 ![Modulo academico - vista 2](frontend/src/assets/img/landing-4.png)
