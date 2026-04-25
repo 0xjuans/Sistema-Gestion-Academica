@@ -109,8 +109,8 @@ export function MateriasSection() {
 
   return (
     <SectionCard
-      title="Gestion de Materias"
-      subtitle="Administra materias y creditos academicos"
+      title="Gestión de Materias"
+      subtitle="Administra materias y créditos académicos"
       actions={
         <Button variant="secondary" onClick={() => void loadMaterias()} disabled={isLoading}>
           Actualizar
@@ -127,14 +127,14 @@ export function MateriasSection() {
             required
           />
           <FormField
-            label="Codigo"
+            label="Código"
             name="codigo"
             value={formData.codigo}
             onChange={handleChange}
             required
           />
           <FormField
-            label="Creditos"
+            label="Créditos"
             name="creditos"
             type="number"
             value={formData.creditos}
@@ -148,7 +148,7 @@ export function MateriasSection() {
             </Button>
             {editingMateriaId && (
               <Button type="button" variant="secondary" onClick={resetForm}>
-                Cancelar edicion
+                Cancelar edición
               </Button>
             )}
           </div>
@@ -162,8 +162,8 @@ export function MateriasSection() {
             <thead>
               <tr>
                 <th>Nombre</th>
-                <th>Codigo</th>
-                <th>Creditos</th>
+                <th>Código</th>
+                <th>Créditos</th>
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -194,7 +194,7 @@ export function MateriasSection() {
           </table>
           {isLoading && <p className={styles.info}>Cargando materias...</p>}
           {!isLoading && materias.length === 0 && (
-            <p className={styles.info}>No hay materias registradas aun.</p>
+            <p className={styles.info}>No hay materias registradas aún.</p>
           )}
         </div>
       </div>

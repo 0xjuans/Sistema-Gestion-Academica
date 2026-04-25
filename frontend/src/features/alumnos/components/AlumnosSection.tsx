@@ -108,7 +108,7 @@ export function AlumnosSection() {
 
   return (
     <SectionCard
-      title="Gestion de Alumnos"
+      title="Gestión de Alumnos"
       subtitle="Administra alumnos de forma centralizada"
       actions={
         <Button variant="secondary" onClick={() => void loadAlumnos()} disabled={isLoading}>
@@ -133,7 +133,7 @@ export function AlumnosSection() {
             required
           />
           <FormField
-            label="Correo electronico"
+            label="Correo electrónico"
             name="email"
             type="email"
             value={formData.email}
@@ -154,7 +154,7 @@ export function AlumnosSection() {
             </Button>
             {editingAlumnoId && (
               <Button type="button" variant="secondary" onClick={resetForm}>
-                Cancelar edicion
+                Cancelar edición
               </Button>
             )}
           </div>
@@ -200,7 +200,7 @@ export function AlumnosSection() {
           </table>
           {isLoading && <p className={styles.info}>Cargando alumnos...</p>}
           {!isLoading && alumnos.length === 0 && (
-            <p className={styles.info}>No hay alumnos registrados aun.</p>
+            <p className={styles.info}>No hay alumnos registrados aún.</p>
           )}
         </div>
       </div>

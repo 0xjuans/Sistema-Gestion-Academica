@@ -8,13 +8,13 @@ export function HeroSection({ onNavigateToAcademicModule }: HeroSectionProps) {
   return (
     <section className={`${styles.section} js-hero-section`}>
       <div className={`${styles.content} js-hero-animate js-hero-content`}>
-        <div className={`${styles.badge} js-hero-animate`}>La plataforma integral para educacion</div>
+        <div className={`${styles.badge} js-hero-animate`}>La plataforma integral para educación</div>
         <h1 className="js-hero-animate">
-          Gestiona tu institucion educativa con <span>eficiencia</span>
+          Gestiona tu institución educativa con <span>eficiencia</span>
         </h1>
         <p className="js-hero-animate">
-          Centraliza la administracion, simplifica la comunicacion y empodera a
-          docentes con una solucion moderna para el entorno academico.
+          Centraliza la administración, simplifica la comunicación y empodera a docentes con una
+          solución moderna para el entorno académico.
         </p>
         <div className={`${styles.ctaRow} js-hero-animate`}>
           <button
@@ -40,11 +40,11 @@ export function HeroSection({ onNavigateToAcademicModule }: HeroSectionProps) {
             <span className={styles.dot}></span>
             <span className={styles.dot}></span>
             <span className={styles.dot}></span>
-            <strong>Panel Academico</strong>
+            <strong>Panel Académico</strong>
           </div>
 
           <div className={styles.chartCard}>
-            <p className={styles.chartTitle}>Rendimiento Sostenible (Ultimos 7 dias)</p>
+            <p className={styles.chartTitle}>Rendimiento Sostenible (Últimos 7 días)</p>
             <div className={styles.chartArea}>
               <div className={styles.gridLines}></div>
               <div className={styles.bars}>
@@ -71,7 +71,7 @@ export function HeroSection({ onNavigateToAcademicModule }: HeroSectionProps) {
           </div>
         </div>
         <div className={`${styles.floatingCard} js-hero-floating-card`}>
-          <strong>Rendimiento Academico</strong>
+          <strong>Rendimiento Académico</strong>
           <span>+15% este trimestre</span>
         </div>
       </div>

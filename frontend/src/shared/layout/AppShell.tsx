@@ -9,7 +9,7 @@ export function AppShell({ children }: AppShellProps) {
   return (
     <div className={styles.page}>
       <header className={styles.hero}>
-        <h1>Sistema de Gestion Academica</h1>
+        <h1>Sistema de Gestión Académica</h1>
         <p>
           Plataforma responsive para administrar alumnos, materias y notas con una
           experiencia clara y productiva.

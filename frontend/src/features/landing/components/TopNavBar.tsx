@@ -70,7 +70,7 @@ export function TopNavBar({
             </span>
           </button>
           <button type="button" className={styles.loginButton} onClick={handleNavigateModule}>
-            Iniciar sesion
+            Iniciar sesión
           </button>
           <button
             type="button"
@@ -117,7 +117,7 @@ export function TopNavBar({
             </span>
           </button>
           <button type="button" className={styles.loginButton} onClick={handleNavigateModule}>
-            Iniciar sesion
+            Iniciar sesión
           </button>
           <button
             type="button"

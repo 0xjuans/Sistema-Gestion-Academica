@@ -1,26 +1,26 @@
 export const trustMetrics = [
   { value: "+200", label: "Instituciones Activas" },
-  { value: "95%", label: "Satisfaccion" },
+  { value: "95%", label: "Satisfacción" },
   { value: "+20k", label: "Estudiantes Gestionados" },
 ];
 
 export const featureCards = [
   {
-    title: "Gestion de Estudiantes",
+    title: "Gestión de Estudiantes",
     description:
-      "Expedientes digitales, asistencia, historial academico y seguimiento en tiempo real.",
+      "Expedientes digitales, asistencia, historial académico y seguimiento en tiempo real.",
     icon: "groups",
   },
   {
-    title: "Gestion de Materias",
+    title: "Gestión de Materias",
     description:
-      "Plan de estudio, asignacion de horarios y organizacion academica desde un solo modulo.",
+      "Plan de estudio, asignación de horarios y organización académica desde un solo módulo.",
     icon: "menu_book",
   },
   {
     title: "Calificaciones",
     description:
-      "Registro rapido de notas, consulta por alumno/materia y reportes para seguimiento.",
+      "Registro rápido de notas, consulta por alumno/materia y reportes para seguimiento.",
     icon: "grading",
   },
 ];

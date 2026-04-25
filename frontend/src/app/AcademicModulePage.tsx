@@ -23,7 +23,7 @@ export function AcademicModulePage() {
   return (
     <section className={styles.wrapper}>
       <AppShell>
-        <div className={styles.tabBar} role="tablist" aria-label="Navegacion de modulos academicos">
+        <div className={styles.tabBar} role="tablist" aria-label="Navegación de módulos académicos">
           <button
             type="button"
             role="tab"
@@ -31,7 +31,7 @@ export function AcademicModulePage() {
             className={`${styles.tabButton} ${activeTab === "alumnos" ? styles.tabActive : ""}`}
             onClick={() => setActiveTab("alumnos")}
           >
-            Gestion de Alumnos
+            Gestión de Alumnos
           </button>
           <button
             type="button"
@@ -40,7 +40,7 @@ export function AcademicModulePage() {
             className={`${styles.tabButton} ${activeTab === "materias" ? styles.tabActive : ""}`}
             onClick={() => setActiveTab("materias")}
           >
-            Gestion de Materias
+            Gestión de Materias
           </button>
           <button
             type="button"
@@ -49,7 +49,7 @@ export function AcademicModulePage() {
             className={`${styles.tabButton} ${activeTab === "notas" ? styles.tabActive : ""}`}
             onClick={() => setActiveTab("notas")}
           >
-            Gestion de Notas
+            Gestión de Notas
           </button>
         </div>
         <div className={styles.modulePanel} role="tabpanel">

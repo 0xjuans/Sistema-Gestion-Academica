@@ -103,7 +103,7 @@ export function NotasSection() {
 
   return (
     <SectionCard
-      title="Gestion de Notas"
+      title="Gestión de Notas"
       subtitle="Registro y consulta por alumno y por materia"
       actions={
         <Button variant="secondary" onClick={() => void loadReferenceData()} disabled={isLoading}>
@@ -177,7 +177,7 @@ export function NotasSection() {
               <tr>
                 <th>Alumno</th>
                 <th>Materia</th>
-                <th>Codigo</th>
+                <th>Código</th>
                 <th>Nota</th>
                 <th>Fecha</th>
               </tr>

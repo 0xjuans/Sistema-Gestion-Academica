@@ -9,14 +9,14 @@ export function FinalCtaSection({ onNavigateToAcademicModule }: FinalCtaSectionP
     <section className={styles.section}>
       <div className={styles.card}>
         <div>
-          <h2>Listo para transformar tu gestion academica?</h2>
+          <h2>¿Listo para transformar tu gestión académica?</h2>
           <p>
-            Unete a instituciones que optimizaron procesos y mejoraron su experiencia
+            Únete a instituciones que optimizaron procesos y mejoraron su experiencia
             educativa con una plataforma centralizada.
           </p>
         </div>
         <button type="button" className={styles.ctaPulse} onClick={onNavigateToAcademicModule}>
-          Solicitar implementacion
+          Solicitar implementación
         </button>
       </div>
     </section>

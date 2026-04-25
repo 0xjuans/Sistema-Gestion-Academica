@@ -30,6 +30,12 @@ Ejecutar desde la raiz del proyecto:
 - Swagger UI: `http://localhost:8080/swagger-ui/index.html`
 - OpenAPI JSON: `http://localhost:8080/v3/api-docs`
 
+## Live demo (Render)
+- Frontend live: [https://sistema-gestion-academica-frontend.onrender.com](https://sistema-gestion-academica-frontend.onrender.com)
+- Backend API live: [https://sistema-gestion-academica.onrender.com](https://sistema-gestion-academica.onrender.com)
+- Backend API live: [https://sistema-gestion-academica.onrender.com/swagger-ui/index.html](https://sistema-gestion-academica.onrender.com/swagger-ui/index.html)
+- Nota: en la capa gratuita de Render, el primer acceso puede tardar mientras los servicios se activan nuevamente (cold start).
+
 ## Datos de prueba y backup
 - Script de seed: `backend/db/seed/seed_data.sql`
 - Backup requerido por la prueba: `backend/db/dump/academic_db.dump`

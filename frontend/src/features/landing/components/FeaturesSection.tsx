@@ -7,8 +7,7 @@ export function FeaturesSection() {
       <header className={styles.header}>
         <h2>Todo lo que necesitas en un solo lugar</h2>
         <p>
-          Modulos integrados para cubrir cada aspecto operativo y academico de tu
-          institucion.
+          Módulos integrados para cubrir cada aspecto operativo y académico de tu institución.
         </p>
       </header>
 
