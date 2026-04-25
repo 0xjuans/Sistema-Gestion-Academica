@@ -1,0 +1,173 @@
+.footer {
+  border-top: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, #f8fafc, #eef6ff);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.brand strong {
+  color: #0d9488;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 1.25rem;
+}
+
+.brandBadge {
+  margin: 0.55rem 0 0;
+  width: fit-content;
+  border: 1px solid #bae6fd;
+  background: rgba(255, 255, 255, 0.8);
+  color: #0f766e;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.brand p {
+  color: #64748b;
+}
+
+.social {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 0.8rem;
+}
+
+.socialLink {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #0f766e;
+  border: 1px solid #bae6fd;
+  background: linear-gradient(135deg, #ecfeff, #dbeafe);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.socialLink svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.socialLink:hover {
+  transform: translateY(-1px);
+  color: #0b7668;
+  box-shadow: 0 10px 16px -12px rgba(14, 116, 144, 0.85);
+}
+
+.container h4 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.container a {
+  color: #475569;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.container a:hover {
+  color: #0f766e;
+}
+
+.bottomBar {
+  border-top: 1px solid #e2e8f0;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.9rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.84rem;
+}
+
+.bottomBar p {
+  margin: 0;
+  color: #64748b;
+}
+
+.bottomSupport {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+@media (max-width: 920px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+:global(.dark) .footer {
+  background: linear-gradient(180deg, #020617, #0b1120);
+  border-top-color: #1e293b;
+}
+
+:global(.dark) .brand strong {
+  color: #5eead4;
+}
+
+:global(.dark) .brand p,
+:global(.dark) .container a {
+  color: #94a3b8;
+}
+
+:global(.dark) .container h4 {
+  color: #e2e8f0;
+}
+
+:global(.dark) .socialLink {
+  color: #5eead4;
+  border-color: #334155;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+:global(.dark) .socialLink:hover {
+  color: #99f6e4;
+}
+
+:global(.dark) .bottomBar {
+  border-top-color: #1e293b;
+}
+
+:global(.dark) .bottomBar p {
+  color: #94a3b8;
+}
+
+:global(.dark) .bottomSupport {
+  color: #5eead4;
+}
+
+:global(.dark) .brandBadge {
+  border-color: #334155;
+  background: rgba(15, 23, 42, 0.75);
+  color: #5eead4;
+}

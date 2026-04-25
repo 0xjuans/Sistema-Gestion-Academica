@@ -1,0 +1,70 @@
+.wrapper {
+  padding: 1rem 0 1.5rem;
+}
+
+.tabBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.9rem;
+  padding: 0.55rem;
+  border-radius: 14px;
+  border: 1px solid rgba(14, 116, 144, 0.2);
+  background: linear-gradient(135deg, rgba(236, 254, 255, 0.9), rgba(224, 242, 254, 0.75));
+}
+
+.tabButton {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.tabButton:hover {
+  color: #0f766e;
+  border-color: rgba(15, 118, 110, 0.24);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.tabActive {
+  color: #ffffff;
+  border-color: rgba(15, 118, 110, 0.9);
+  background: linear-gradient(135deg, #0f766e, #0f766e);
+  box-shadow: 0 10px 16px -14px rgba(15, 23, 42, 0.8);
+}
+
+.modulePanel {
+  display: grid;
+}
+
+@media (max-width: 680px) {
+  .tabBar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+:global(.dark) .tabBar {
+  border-color: rgba(100, 116, 139, 0.35);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(15, 118, 110, 0.2));
+}
+
+:global(.dark) .tabButton {
+  color: #cbd5e1;
+}
+
+:global(.dark) .tabButton:hover {
+  color: #5eead4;
+  border-color: rgba(94, 234, 212, 0.26);
+  background: rgba(30, 41, 59, 0.68);
+}
+
+:global(.dark) .tabActive {
+  color: #032424;
+  border-color: transparent;
+  background: linear-gradient(135deg, #5eead4, #2dd4bf);
+}

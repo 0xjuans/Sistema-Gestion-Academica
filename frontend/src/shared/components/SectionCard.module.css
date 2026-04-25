@@ -56,3 +56,17 @@
 .content {
   padding: 1rem 1.2rem 1.2rem;
 }
+
+:global(.dark) .card {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 14px 28px -20px rgba(2, 6, 23, 0.95);
+}
+
+:global(.dark) .header h2 {
+  color: #e2e8f0;
+}
+
+:global(.dark) .header p {
+  color: #94a3b8;
+}

@@ -7,8 +7,55 @@
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 #root {
   min-height: 100vh;
+}
+
+html.dark body {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+/* Scrollbar global en paleta del proyecto */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0f766e #dbeafe;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #dbeafe;
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0ea5a6, #0f766e);
+  border-radius: 999px;
+  border: 2px solid #dbeafe;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #14b8a6, #0f766e);
+}
+
+html.dark * {
+  scrollbar-color: #14b8a6 #0f172a;
+}
+
+html.dark *::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+html.dark *::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2dd4bf, #0f766e);
+  border-color: #0f172a;
 }

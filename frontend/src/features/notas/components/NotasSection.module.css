@@ -1,4 +1,117 @@
-.placeholder {
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.selectGroup {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.selectGroup span {
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.select {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.68rem 0.8rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.formActions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.table th,
+.table td {
+  padding: 0.7rem 0.55rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th {
+  color: #334155;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.success {
   margin: 0;
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.error {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.info {
+  margin: 0.6rem 0 0;
   color: #64748b;
+}
+
+@media (max-width: 860px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+:global(.dark) .selectGroup span {
+  color: #cbd5e1;
+}
+
+:global(.dark) .select {
+  background: #0b1220;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+:global(.dark) .select:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+}
+
+:global(.dark) .table th,
+:global(.dark) .table td {
+  border-bottom-color: #1e293b;
+  color: #cbd5e1;
+}
+
+:global(.dark) .table th {
+  color: #94a3b8;
+}
+
+:global(.dark) .info {
+  color: #94a3b8;
 }

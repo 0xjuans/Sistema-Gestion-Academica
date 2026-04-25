@@ -1,20 +1,46 @@
-.grid {
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.page main {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
 }
 
-.grid > :nth-child(1),
-.grid > :nth-child(2) {
-  grid-column: span 6;
+.modulesPageMain {
+  padding-bottom: 1.2rem;
 }
 
-.grid > :nth-child(3) {
-  grid-column: span 12;
+.backButtonWrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.1rem 1rem 0.4rem;
 }
 
-@media (max-width: 900px) {
-  .grid > * {
-    grid-column: span 12;
-  }
+.backButton {
+  border: 1px solid #bae6fd;
+  background: linear-gradient(135deg, #ecfeff, #e0f2fe);
+  color: #0f766e;
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.backButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px -12px rgba(15, 23, 42, 0.7);
+}
+
+:global(.dark) .page {
+  background: #020617;
+}
+
+:global(.dark) .backButton {
+  border-color: #334155;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #5eead4;
 }

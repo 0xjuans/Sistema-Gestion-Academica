@@ -1,0 +1,293 @@
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+}
+
+.badge {
+  width: fit-content;
+  background: #e6fffb;
+  color: #0f766e;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.content h1 {
+  margin: 0;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  color: #111827;
+}
+
+.content h1 span {
+  color: #0f766e;
+}
+
+.content p {
+  margin: 0;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.ctaPulse {
+  animation: ctaPulse 2.4s ease-in-out infinite;
+}
+
+.ctaPulseSoft {
+  animation: ctaPulseSoft 2.8s ease-in-out infinite;
+}
+
+@keyframes ctaPulse {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 0 rgba(15, 118, 110, 0.34);
+  }
+  50% {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 11px rgba(15, 118, 110, 0);
+  }
+}
+
+@keyframes ctaPulseSoft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+}
+
+.visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(125, 211, 252, 0.42);
+  box-shadow:
+    0 24px 40px -20px rgba(15, 23, 42, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  min-height: 340px;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255, 255, 255, 0.42), transparent 48%),
+    linear-gradient(165deg, rgba(186, 230, 253, 0.7), rgba(191, 219, 254, 0.42));
+  backdrop-filter: blur(14px) saturate(120%);
+}
+
+.dashboard {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  box-shadow:
+    0 18px 30px -18px rgba(15, 23, 42, 0.52),
+    inset 0 1px 0 rgba(255, 255, 255, 0.36);
+  backdrop-filter: blur(12px) saturate(140%);
+  padding: 0.85rem;
+}
+
+.dashboardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #334155;
+  font-size: 0.82rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #cbd5e1;
+}
+
+.dashboardTop strong {
+  margin-left: 0.2rem;
+  color: #0f172a;
+}
+
+.chartCard {
+  margin-top: 0.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 10px;
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(8px);
+}
+
+.chartTitle {
+  margin: 0;
+  color: #475569;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.chartArea {
+  position: relative;
+  margin-top: 0.5rem;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gridLines {
+  position: absolute;
+  inset: 0 0 0.45rem 0;
+  background-image: linear-gradient(to top, rgba(100, 116, 139, 0.2) 1px, transparent 1px);
+  background-size: 100% 30px;
+}
+
+.bars {
+  position: absolute;
+  inset: 0 0 0.45rem 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  gap: 0.4rem;
+  padding: 0 0.3rem;
+}
+
+.bars span {
+  display: block;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.62), rgba(45, 212, 191, 0.62));
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.14);
+}
+
+.line {
+  position: absolute;
+  inset: 0 0 0.45rem 0;
+}
+
+.line polyline {
+  fill: none;
+  stroke: #0f766e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 4px rgba(14, 116, 144, 0.25));
+}
+
+.floatingCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(11px) saturate(130%);
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.2rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.floatingCard strong {
+  color: #0f172a;
+}
+
+.floatingCard span {
+  color: #0f766e;
+}
+
+@media (max-width: 940px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+  }
+}
+
+:global(.dark) .badge {
+  background: rgba(15, 118, 110, 0.2);
+  color: #5eead4;
+}
+
+:global(.dark) .content h1 {
+  color: #f8fafc;
+}
+
+:global(.dark) .content p {
+  color: #cbd5e1;
+}
+
+:global(.dark) .secondaryButton {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+:global(.dark) .visual {
+  border-color: rgba(30, 41, 59, 0.9);
+  background:
+    radial-gradient(circle at 12% 14%, rgba(148, 163, 184, 0.24), transparent 48%),
+    linear-gradient(165deg, rgba(15, 23, 42, 0.92), rgba(15, 118, 110, 0.22));
+}
+
+:global(.dark) .dashboard {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(100, 116, 139, 0.35);
+}
+
+:global(.dark) .dashboardTop,
+:global(.dark) .dashboardTop strong,
+:global(.dark) .chartTitle,
+:global(.dark) .floatingCard strong {
+  color: #e2e8f0;
+}
+
+:global(.dark) .dot {
+  background: #64748b;
+}
+
+:global(.dark) .gridLines {
+  background-image: linear-gradient(to top, rgba(148, 163, 184, 0.22) 1px, transparent 1px);
+}
+
+:global(.dark) .floatingCard {
+  background: rgba(15, 23, 42, 0.62);
+  border-color: rgba(100, 116, 139, 0.35);
+}
+
+:global(.dark) .floatingCard span {
+  color: #5eead4;
+}

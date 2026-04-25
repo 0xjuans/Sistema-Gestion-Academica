@@ -43,3 +43,23 @@
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
+
+:global(.dark) .wrapper span,
+:global(.dark) .wrapper {
+  color: #cbd5e1;
+}
+
+:global(.dark) .input {
+  background: #0b1220;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+:global(.dark) .input::placeholder {
+  color: #64748b;
+}
+
+:global(.dark) .input:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+}
