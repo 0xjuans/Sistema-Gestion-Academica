@@ -42,8 +42,18 @@ Con contenedor MySQL levantado (`academic-mysql`):
 ## Generar nuevamente el .dump
 5. `docker exec academic-mysql sh -c "mysqldump -uacademic_user -pacademic_pass --databases academic_db --routines --triggers --single-transaction --no-tablespaces" > backend/db/dump/academic_db.dump`
 
-## Probar endpoints principales (opcional)
+## Probar endpoints principales
 6. `POST /api/alumnos`
 7. `POST /api/materias`
 8. `POST /api/notas`
 9. `GET /api/notas/alumno/{alumnoId}`
+
+## Capturas de la web
+
+### Landing
+![Landing principal](frontend/src/assets/img/landing-1.png)
+![Landing modulos](frontend/src/assets/img/landing-2.png)
+
+### Modulo academico
+![Modulo academico - vista 1](frontend/src/assets/img/landing-3.png)
+![Modulo academico - vista 2](frontend/src/assets/img/landing-4.png)
